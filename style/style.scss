@@ -52,6 +52,13 @@ body {
   h1 {
     font-size: 400%;
   }
+
+  @media (min-width: $mobile-break) {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    max-height: 962px;
+  }
 }
 
 .page-banner__info {
@@ -59,6 +66,13 @@ body {
   padding: 45px 20px;
   color: #fff;
   text-transform: uppercase;
+
+  @media (min-width: $mobile-break) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .page-banner__info-logo {
@@ -72,12 +86,12 @@ body {
 }
 
 .page-banner__video {
-  width: 100%;
+  height: 100%;
   display: none;
 
-  //@media (min-width: $mobile-break) {
-  //  display: block;
-  //}
+  @media (min-width: $mobile-break) {
+    display: block;
+  }
 }
 
 .sections-container {
@@ -162,7 +176,8 @@ body {
 
 .factoid-container {
   @media (min-width: $mobile-break) {
-    columns: 2;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -170,6 +185,11 @@ body {
   display: flex;
   text-align: left;
   padding-bottom: 24px;
+  flex-basis: 50%;
+}
+
+.factoid__icon-container {
+  flex-shrink: 0;
 }
 
 .factoid__icon {
@@ -195,6 +215,11 @@ body {
 .factoid__text {
   line-height: 1.8;
   margin: 8px 0 0;
+  padding-right: 20px;
+}
+
+.interstitial-image {
+  display: block;
 }
 
 .person-container {
