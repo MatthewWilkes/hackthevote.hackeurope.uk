@@ -33,14 +33,18 @@ body {
   line-height: 1.8;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
 .page-banner {
   width: 100vw;
-  background-image: url(../assets/code.jpg);
+  background-image: url(../assets/hello_world.jpg);
   background-position: center;
   background-size: cover;
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    font-weight: 300;
+    font-weight: bold;
     line-height: 1.1em;
   }
 
@@ -65,7 +69,7 @@ body {
   text-align: center;
   padding: 45px 20px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   @media (min-width: $mobile-break) {
     position: absolute;
@@ -144,8 +148,8 @@ body {
 
   .heading {
     color: $hack-blue;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: bold;
+    text-transform: capitalize;
   }
 }
 
@@ -206,7 +210,7 @@ body {
 
 .factoid__heading {
   margin: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: $hack-blue;
   font-weight: 300;
   font-size: 1.5em;
