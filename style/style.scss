@@ -95,6 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 .page-banner__info-org-logos {
   width: 100%;
   max-width: 251px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .page-banner__video {
@@ -103,6 +105,10 @@ h1, h2, h3, h4, h5, h6 {
 
   @media (min-width: $mobile-break) {
     display: block;
+    overflow: hidden;
+    height: 520px;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
@@ -120,6 +126,18 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../assets/towerbridge.jpg);
     background-position: center;
     background-size: cover;
+    .heading {
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .text {
+      margin-top: 10px;
+      color: #fff;
+      margin-left: 30px;
+      margin-right: 30px;
+      
+    }
   }
 }
 
@@ -135,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &.sign-up {
-    padding: 30px 0;
+    padding: 0;
   }
 
   &.who-we-are, &.find-out-more {
@@ -147,11 +165,15 @@ h1, h2, h3, h4, h5, h6 {
     .text {
       margin-top: 10px;
       color: #fff;
+      margin-left: 30px;
+      margin-right: 30px;
+      
     }
   }
 
   &.find-out-more {
-    text-align: left;
+    padding: 0;
+    text-align: center;
   }
 
   .heading {
@@ -226,8 +248,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .factoid__text {
   line-height: 1.8;
-  margin: 8px 0 0;
   padding-right: 20px;
+  margin-top: -0.5em;
 }
 
 .interstitial-image {
@@ -255,12 +277,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sign-up__button {
-  color: $button-colour;
+  color: white;
+  background-color: $hack-blue;
   padding: 11px;
-  border: 2px solid $button-colour;
+  border: 2px solid white;
   text-decoration: none;
   display: block;
   font-size: 19px;
+  
 }
 
 .find-out-more__heading {
