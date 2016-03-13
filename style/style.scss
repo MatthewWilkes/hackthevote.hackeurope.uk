@@ -33,8 +33,16 @@ body {
   line-height: 1.8;
 }
 
+a {
+  color: $hack-blue;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
+}
+
+.header-link {
+  text-decoration: none;
 }
 
 .page-banner {
@@ -290,4 +298,9 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 2px solid $info-box-border-colour;
   padding: 15px;
   color: #fff;
+  text-align: left;
+
+  a {
+    color: #fff;
+  }
 }
