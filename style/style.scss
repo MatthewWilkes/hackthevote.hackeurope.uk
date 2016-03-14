@@ -5,7 +5,8 @@ $large-break: 1100px;
 $font-family: "Lato", sans-serif;
 $background-color: #fff;
 $info-grey: #424242;
-$button-colour: #b7b7b7;
+//$button-colour: #b7b7b7;
+$button-colour: $hack-blue;
 $info-box-border-colour: #e5e5e5;
 $info-box-heading-bg: #fafafa;
 
@@ -39,6 +40,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
+  margin-top: 0;
 }
 
 .header-link {
@@ -54,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-weight: bold;
     line-height: 1.1em;
+    margin-bottom: 15px;
   }
 
   // font sizes taken from the source
@@ -69,13 +72,13 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     position: relative;
     overflow: hidden;
-    max-height: 962px;
+    max-height: 540px;
   }
 }
 
 .page-banner__info {
   text-align: center;
-  padding: 45px 20px;
+  padding: 25px 20px;
   color: #fff;
   text-transform: capitalize;
 
@@ -89,12 +92,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-banner__info-logo {
   margin: 20px 0;
-  max-width: 251px;
+  max-width: 151px;
 }
 
 .page-banner__info-org-logos {
   width: 100%;
-  max-width: 251px;
+  max-width: 151px;
 }
 
 .page-banner__video {
@@ -124,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-  padding: 45px 0;
+  padding: 15px 0;
   text-align: center;
   width: 90vw;
 
@@ -261,6 +264,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: block;
   font-size: 19px;
+
+  &:hover {
+    background-color: $hack-blue;
+    color: #fff;
+  }
 }
 
 .find-out-more__heading {
