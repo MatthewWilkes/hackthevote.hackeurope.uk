@@ -260,6 +260,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .person-bio__photo {
   width: 200px;
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  
 }
 
 .person-bio__name {
