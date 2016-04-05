@@ -81,6 +81,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 20px;
   color: #fff;
   text-transform: capitalize;
+  width: 90vw;
+  max-width: 950px;
 
   @media (min-width: $mobile-break) {
     position: absolute;
@@ -110,8 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     position: relative;
     // TODO find better vid, or see if these values nudge content enough to be acceptable
-    top: -200px;
-    left: -100px;
+    top: -250px;
   }
 }
 
@@ -240,6 +241,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 20px;
 }
 
+.youtube-promo {
+  max-width: 560px;
+}
+
 .interstitial-image {
   display: block;
 }
@@ -260,12 +265,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .person-bio__photo {
   width: 200px;
-  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: url(#greyscale);
-  filter: gray;
-  
 }
 
 .person-bio__name {

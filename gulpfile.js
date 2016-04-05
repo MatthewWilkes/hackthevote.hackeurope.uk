@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     gutil = require('gulp-util');
 
 var AUTOPREFIXER_BROWSERS = [
-  'ie >= 10',
+  'ie >= 9',
   'ie_mob >= 10',
   'ff >= 30',
   'chrome >= 34',
